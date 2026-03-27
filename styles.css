@@ -190,6 +190,12 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
+/* Keep link text white even if global `a { color }` rules exist */
+.hero-cta,
+.hero-cta:visited {
+  color: #fff;
+}
+
 .hero-cta:hover {
   background: #2c2c30;
   transform: translateY(-2px);
@@ -202,9 +208,13 @@ main {
 }
 
 .hero-cta-apple {
+  display: block;
   width: 28px;
   height: 28px;
+  max-width: 28px;
+  max-height: 28px;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .hero-cta-lines {
