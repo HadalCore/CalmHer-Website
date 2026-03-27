@@ -69,11 +69,27 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-weight: 700;
   font-size: 1.35rem;
   color: var(--accent-deep);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(155, 122, 163, 0.2);
+}
+
+.logo-text {
+  line-height: 1;
 }
 
 .nav {
